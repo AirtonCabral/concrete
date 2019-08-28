@@ -1,0 +1,115 @@
+.notFound {
+  text-align: center;
+}
+
+.notFound p {
+  width: 100%;
+}
+
+.notFound .header {
+  text-align: left;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.notFound .header .Github-Search {
+  max-width: 300px;
+  height: 81px;
+  font-family: Monaco;
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  padding: 15px;
+}
+
+.notFound .header .Github-Search span {
+  font-family: Raleway;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.notFound .header .Search-Icon {
+  width: 30px;
+  height: 30.1px;
+  -webkit-box-shadow: 0 0 4px NaNpx rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 4px NaNpx rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+}
+
+.notFound .header .inputSearch {
+  width: calc(100% - 450px);
+  padding: 20px 20px 0px 20px;
+  height: 70px;
+}
+
+.notFound .header button {
+  width: 100px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: #ac53f2;
+}
+
+.notFound .header button:hover {
+  background-color: #8c35d1;
+}
+
+.notFound .header input {
+  height: 50px;
+}
+
+.notFound .header ul {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.notFound .header ul li {
+  list-style: none;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #c9c9c945;
+  width: 100%;
+  background-color: #fff;
+}
+
+.notFound .header ul li:hover {
+  background-color: #c9c9c987;
+}
+
+.notFound .header .input-group-append {
+  width: 100px;
+  position: relative;
+  top: -50px;
+  left: calc(100% - 100px);
+}
+
+.notFound .header .spaceList {
+  position: relative;
+  z-index: 10;
+  top: -20px;
+  left: -1px;
+  width: calc(100% - 450px);
+  padding: 0px 20px 0px 20px;
+}
+
+.notFound .Not-found-message {
+  position: fixed;
+  top: 20%;
+  height: 41px;
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ac53f2;
+}
+/*# sourceMappingURL=NotFound.css.map */
