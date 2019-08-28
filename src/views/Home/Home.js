@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <>
-			<div className="container Home">7
+			<div className="container Home">
 				<h1 className="Github-Search">GitHub<span>Search</span></h1>
         <div className="input-group sm-12">
           <input value={searchUser}
