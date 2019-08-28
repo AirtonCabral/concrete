@@ -14,7 +14,7 @@ export default function Home() {
     const fetchUrl = async() => {
       const options = {
         headers: {
-          'User-Agent': 'concreteApp',
+          'User-Agent': 'AppConcrete',
           'clientId': '15694229'
         }
       };

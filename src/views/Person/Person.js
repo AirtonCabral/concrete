@@ -5,7 +5,7 @@ import SideUser from "../../components/sideUser/sideUser";
 import Repos from "../../components/Repos/Repos";
 
 
-// import imgSearch from '../../assets/svg/search.svg'
+import imgSearch from '../../assets/svg/search.svg'
 import './Person.css'
 
 export default function Person() {
@@ -26,11 +26,12 @@ export default function Person() {
     const fetchUrl = async() => {
 			const usersInfoResponse = await fetch(`https://api.github.com/users/${query.login}`);
 			const jsonUserInfo = await usersInfoResponse.json();
-
-      if(await jsonUserInfo) {
+      debugger
+      if( usersInfoResponse.status === 200) {
         console.log(jsonUserInfo);
         setUserInfo(jsonUserInfo);
-        // window.location.href = window.location.origin + '/NotFound'
+      } else {
+        window.location.href = window.location.origin + '/NotFound'
       }
 		}
 		fetchUrl()
@@ -40,7 +41,7 @@ export default function Person() {
     const fetchRepos = async() => {
 			const reposResponse = await fetch(`https://api.github.com/users/${query.login}/repos`);
 			const jsonRepos = await reposResponse.json();
-
+      debugger
       if(await jsonRepos) {
         setRepos(jsonRepos);
         setLoading(false)
@@ -102,7 +103,7 @@ export default function Person() {
             <button className="btn"
                     type="button" 
                     id="button-addon2" > 
-              {/* <img src={imgSearch} alt='botão de procura'/>  */}
+              <img src={imgSearch} alt='botão de procura'/> 
             </button>
           </div>
           { loading ? '' : ( repos.map((repo) => {
